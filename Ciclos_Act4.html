@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ciclos</title>
+</head>
+<body>
+<h1>Do/While</h1>
+<p id="salida"></p>
+</body>
+<script type="text/javascript">
+	
+	var equipos = ["Milan", "Liverpool", "Barcelona", "Chelsea", "Bayern"];
+	var	texto = "Equipos: <br>";
+	var i = 0;
+	
+	do {
+		texto += equipos[i] + "<br>";
+		i++;
+	} while (i < equipos.length);
+
+	
+
+	document.getElementById("salida").innerHTML = texto;
+
+
+
+</script>
+</html>

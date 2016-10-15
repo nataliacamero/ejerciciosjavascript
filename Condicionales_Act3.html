@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionales</title>
+</head>
+<body>
+	<h1>If, Else If, Else</h1>
+	<p id="mensaje"></p>
+</body>
+<script type="text/javascript">
+	var nota = 4.5;
+
+	if (nota > 3.0 && nota < 4.0) {
+		document.getElementById("mensaje").innerHTML = "Su nota es de nivel medio!!";
+	} else if (nota > 4.0 && nota < 5.0) {
+		document.getElementById("mensaje").innerHTML = "Su nota es de nivel alto!!";
+	} else {
+		document.getElementById("mensaje").innerHTML = "Su nota es de nivel bajo!!";
+	}
+
+</script>
+</html>

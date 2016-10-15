@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Metodo concat() aplicado en arrays</h1>
+
+		<p id="c1"></p>
+		<p id="c2"></p>
+		<p id="c3"></p>
+
+</body>
+
+<script type="text/javascript">
+	
+	//Definimos los arrays con estructura de [].
+
+	var frutas = ["Mango","Kiwi","Toronja"];
+	var colores = ["Negro","Violeta","Verde"];
+	var animales = ["Leopardo","Vaca","Cerdo"];
+	var equipos = ["River Plate","America De Cali","Gremio"];
+	var planetas = ["Jupiter","Urano","Saturno"];
+	var flores = ["Hortensia","Margarita","Azucena"];
+
+
+	document.getElementById("c1").innerHTML =  frutas.concat(colores);
+	document.getElementById("c2").innerHTML =  animales.concat(equipos);
+	document.getElementById("c3").innerHTML =  planetas.concat(flores);
+
+</script>
+
+</html>

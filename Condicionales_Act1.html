@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionales</title>
+</head>
+<body>
+	<h1>If</h1>
+	<p>Edad 28</p>
+	<p id="edad"></p>
+	<button onclick="verificarEdad()">Verificar Edad</button>
+</body>
+
+<script type="text/javascript">
+	
+var edad = 28;
+
+function verificarEdad() {
+
+	if (edad >= 18) {
+		document.getElementById("edad").innerHTML = "Es mayor de edad!!";
+	}
+
+}
+
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ciclos</title>
+</head>
+<body>
+	<h1>Actividad 2 For/In</h1>
+	<h1>Propiedades del objeto persona.</h1>
+	<p id="salida"></p>
+</body>
+<script type="text/javascript">
+	//Creamos el objeto.
+	
+	var texto = "";
+	var persona = {
+		id:"52953498",
+		nombre: "Natalia Camero",
+		telefono: 2321656
+	};
+
+	var x;
+
+	for (x in persona) {
+		texto += persona[x] + "<br>";
+	}
+
+	document.getElementById("salida").innerHTML = texto;
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Funciones</h1>
+
+	<p id="resultado1"></p>
+	<p id="resultado2"></p>
+	<p id="resultado3"></p>
+
+</body>
+
+<script type="text/javascript">
+	
+	//LLamado a una funcion desde el codigo que recibe dos parametros y retorna un valor.
+
+	//Primero se crea la funcion.
+	function division (x,y){
+		return x / y;
+	}
+
+	//Luego se llama dandole un nombre a una variable y se le asigna valores a sus parametros.
+	var resultado1 = division (10,2);
+
+	document.getElementById("resultado1").innerHTML = resultado1;
+
+	//LLamado de una funcion que se llama a si misma.
+	//Aqui solo se crea la funcion.
+
+	(function (){
+		document.getElementById("resultado2").innerHTML = "Esta es mi primer funcion que se llama a si misma :) ";
+	}) ();
+
+	//Asignar a una variable una funcion.
+	//Se crea la variable y se le asigna la funcion.
+	var z = function (x, y){
+		return x - y
+	};
+
+	//Se llama a la funcion asignandola a una variable.
+	var w = z (15, 6);
+
+	document.getElementById("resultado3").innerHTML = w;
+
+
+
+
+
+
+</script>
+
+</html>

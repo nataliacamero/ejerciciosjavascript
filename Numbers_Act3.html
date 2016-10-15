@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Metodos de los numeros</h1>
+	<h1>Propiedad Prototype</h1>
+
+	<p id="resultado"></p>
+
+</body>
+
+<script type="text/javascript">
+	
+	//Creacion del metodo suma por medio de la propiedad Number.prototype.
+
+	Number.prototype.metodoResta = function () {
+
+		return this - 20;
+	}
+
+	var numero1 = 100;
+
+	document.getElementById("resultado").innerHTML = numero1.metodoResta();
+
+</script>
+
+</html>

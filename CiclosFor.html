@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ciclos</title>
+</head>
+<body>
+	<h1>For</h1>
+
+	<p id="salida"></p>
+
+	<button onclick="mostrarEquipos()">Mostrar Equipos</button>
+</body>
+
+<script>
+	
+function mostrarEquipos() {
+
+	var texto = "Equipos: <br>";
+	var equipos = ["Liverpool", "Barcelona", "Juventus", "Real Madrid", "Roma"];
+
+	for (var i = 0; i < equipos.length; i++) {
+		texto += equipos[i]+" <br> ";
+	}
+
+	document.getElementById("salida").innerHTML = texto;
+}
+
+</script>
+
+</html>

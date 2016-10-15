@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversiones</title>
+</head>
+<body>
+	<h1>Metodo String()</h1>
+		<h1>Conversiones</h1>
+		<p id="conversiones"></p>
+
+	<button onclick="miFuncion()">Mostrar Conversiones</button>
+
+</body>
+
+<script type="text/javascript">
+	function miFuncion () {
+	 	var conv1 = String(15);
+		var conv2 = String(3 + 4);
+		var conv3 = String(true);
+		var conv4 = String(false);
+		var conv5 = String(Date());
+		var conv6 = String(30);
+		var conv7 = String(40 * 8);
+		var conv8 = String(4 > 5);
+		var conv9 = String(6 < 9);
+
+		var texto = "";
+
+		document.getElementById("conversiones").innerHTML = conv1 + "<br>" + conv2 + "<br>" + conv3 + "<br>" + conv4 + "<br>" + conv5 + "<br>" + conv6 + "<br>" + conv7 + "<br>" + conv8 + "<br>" + conv9;
+	}
+
+
+</script>
+
+</html>

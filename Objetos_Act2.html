@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+	</head>
+
+	<body>
+
+		<h1>Estudiante 1</h1>
+
+			<p id="c1"></p>
+			<p id="n1"></p>
+			<p id="t1"></p>
+
+		<h1>Estudiante 2</h1>
+
+			<p id="c2"></p>
+			<p id="n2"></p>
+			<p id="t2"></p>
+
+		<h1>Estudiante 3</h1>
+
+			<p id="c3"></p>
+			<p id="n3"></p>
+			<p id="t3"></p>
+
+	</body>
+
+	<script type="text/javascript">
+		
+		//Creacion de un objeto mediante lista.
+
+		var estudiante1 = {
+			codigo: "001",
+			nombre: "Mateo Ignacio Maggi Camero",
+			telefono: 2221656
+		}
+
+		//Creacion de un objeto mediante la palabra reservada new.
+
+		var estudiante2 = new Object ();
+		estudiante2.codigo = "002";
+		estudiante2.nombre = "Natalia Camero Carreño";
+		estudiante2.telefono = 3013606833;
+
+		//Creacion de un objeto mediante funcion o metodo constructor.
+
+		function estudiante3 (codigo, nombre, telefono) {
+			this.codigo = codigo;
+			this.nombre = nombre;
+			this.telefono = telefono;
+		}
+
+			//Llamamos la funcion y asignamos valores a los parametros.
+
+			var estudiante3 = new estudiante3 ("003","Gustavo Ignacio Maggi Wulff", 3165397360);
+
+
+		//Mostrar sus propiedades en html.
+
+		document.getElementById("c1").innerHTML = estudiante1.codigo;
+		document.getElementById("n1").innerHTML = estudiante1.nombre;
+		document.getElementById("t1").innerHTML = estudiante1.telefono;
+
+		document.getElementById("c2").innerHTML = estudiante2.codigo;
+		document.getElementById("n2").innerHTML = estudiante2.nombre;
+		document.getElementById("t2").innerHTML = estudiante2.telefono;
+
+		document.getElementById("c3").innerHTML = estudiante3.codigo;
+		document.getElementById("n3").innerHTML = estudiante3.nombre;
+		document.getElementById("t3").innerHTML = estudiante3.telefono;
+
+
+	</script>
+
+
+
+</html>

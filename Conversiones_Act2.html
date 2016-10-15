@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversiones de datos</title>
+</head>
+<body>
+
+	<h1>Conversiones de datos</h1>
+	<h1>Metodo Number()</h1>
+
+	<p id="conversiones"></p>
+
+	<button onclick="miFuncion()">Mostrar Conversiones</button>
+
+</body>
+
+<script type="text/javascript">
+	
+	function miFuncion() {
+		
+		var conv1 = Number("4.5");
+		var conv2 = Number("42524");
+		var conv3 = Number(45>9);
+		var conv4 = Number(36<6);
+		var conv5 = Number("56.252");
+		var conv6 = Number("1.53");
+		var conv7 = Number(90>100);
+		var conv8 = Number(44<8);
+
+		document.getElementById("conversiones").innerHTML = conv1 + "<br>" + conv2 + "<br>" + conv3 + "<br>" + conv4 + "<br>" + conv5 + "<br>" + conv6 + "<br>" + conv7 + "<br>" + conv8;
+	}
+
+</script>
+
+</html>

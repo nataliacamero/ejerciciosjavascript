@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionales</title>
+</head>
+<body>
+	<h1>Else If</h1>
+
+		<p id="color"></p>
+
+		<button onclick="verificarColor()">Verificar Color</button>
+</body>
+	
+<script type="text/javascript">
+	
+	var color = "verde";
+
+	function verificarColor() {
+
+		if (color == "azul") {
+			document.getElementById("color").innerHTML = "El color es azul!!!";
+		} else if (color == "rojo") {
+			document.getElementById("color").innerHTML = "El color es rojo";
+		} else {
+			document.getElementById("color").innerHTML = "Sin color";
+		}
+	}
+
+</script>	
+
+
+</html>

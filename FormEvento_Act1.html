@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html"; charset="utf-8">
+		<title>Registro de estudiante</title>
+
+
+		<style>
+			body {
+			    background-color: white;
+			    color: #1db9ea;
+			    font-family: arial;
+			}
+
+			h1 {
+			    text-align: center;
+			    color: white;
+			    font-family: arial;
+			    background: #1db9ea;
+			    padding: 20px;
+			}
+
+			table {
+				border: 1px solid #1db9ea;
+				padding: 30px;
+
+			}
+
+			input {
+				border: 1px solid #1db9ea;
+				font-family: arial;
+				font-size: 90%;
+				padding: 5px;
+			}
+
+			textarea {
+				border: 1px solid #1db9ea;
+				border-radius: 4px;
+			}
+
+			select {
+				border: 1px solid #1db9ea;
+				border-radius: 4px;
+			}
+
+		</style>
+
+		<script type="text/javascript">
+			
+			function evento_OnFocus(elemento) {
+				elemento.style.background = "#dadada";
+			}
+
+			function evento_OnBlur(elemento) {
+				elemento.style.background = "#ffffff";
+			}
+
+			function evento_onClick(elemento) {
+				alert("EL formulario ha sido borrado.")
+			}
+
+			function evento_onClick2(elemento) {
+				alert("El estudiante ha sido registrado correctamente.")
+			}
+
+			function evento_onLoad(elemento) {
+				alert("Bienvenido al formulario de Registro de Estudiante.")
+			}
+		</script>
+
+	</head>
+
+	<body onload="evento_onLoad()">
+		<h1>Formulario de registro de estudiantes</h1> 		
+		<table align="center">		
+			<form id="formulario">
+				<tr>
+					<td><label>Código:</label></td>
+					<td><input id="codigo" name="codigo" type="text" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Nombres:</label></td>
+					<td><input id="nombres" name="nombres" type="text" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Apellidos:</label></td>
+					<td><input id="apellidos" name="apellidos" type="text" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Identificación:</label></td>
+					<td><input id="identificacion" name="identificacion" type="text" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Genero:</label></td>
+					<td><select id="genero" name="genero">
+							<option name="" value=""></option>
+							<option name="masculino" value="masculino">Masculino</option>
+							<option name="femenino" value="femenino">Femenino</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td><label>Fecha de nacimiento:</label></td>
+					<td><input id="fechaNacimiento" name="fechaNacimiento" type="date" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Email:</label></td>
+					<td><input id="email" name="email" type="text" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Teléfono:</label></td>
+					<td><input id="telefono" name="telefono" type="text" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Dirección:</label></td>
+					<td><input id="direccion" name="direccion" type="text" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/></td>
+				</tr>
+				<tr>
+					<td><label>Observaciones:</label></td>
+					<td><textarea id="observaciones" name="observaciones" type="text" onfocus="evento_OnFocus(this)" onblur="evento_OnBlur(this)"/>Observaciones extras del estudiante</textarea></td>
+				</tr>
+
+				<tr>
+					<td><br><input id="borrar" name="borrar" type="reset" value="Borrar" onclick="evento_onClick(this)" /></td>
+					<td><br><input id="enviar" name="enviar" type="submit" value="Enviar" onclick="evento_onClick2(this)"/></td>
+				</tr>
+			</form>
+		</table>
+	</body>
+
+</html>

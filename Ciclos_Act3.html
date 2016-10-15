@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ciclos</title>
+</head>
+<body>
+
+	<h1>While</h1>
+	<h1>Numeros Impares del 1 al 100</h1>
+
+	<p id="salida"></p>
+
+</body>
+
+<script type="text/javascript">
+	
+	var contador = 1;
+	var texto = "";
+
+	while (contador <= 100) {
+		if (contador % 2 != 0) {
+			texto += contador + "<br>";
+		}
+
+		document.getElementById("salida").innerHTML = texto;
+
+		contador ++;
+	}
+
+	
+
+</script>
+
+</html>
