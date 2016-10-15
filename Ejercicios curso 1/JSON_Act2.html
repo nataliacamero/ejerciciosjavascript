@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<title></title>
+
+</head>
+<body>
+
+	<h1>JSON</h1>
+
+	<button onclick="mostrarPersonas()">Mostrar Personas</button>
+	<button onclick="mostrarEdadMayor()">Mostrar Edad Mayor</button>
+
+	<p id="mostrarPersonas"></p>
+	<p id="edadMayor"></p>
+
+</body>
+
+<script type="text/javascript">
+	
+	var personas = [
+		{
+			"nombre":"Mateo Maggi",
+			"edad":5
+		},{
+			"nombre":"Gustavo Maggi",
+			"edad":33
+		},{
+			"nombre":"Rafael Maggi",
+			"edad":17
+		},{
+			"nombre":"Diego Maggi",
+			"edad":27
+		},{
+			"nombre":"Alejandro Maggi",
+			"edad":38
+		},{
+			"nombre":"Alejandra Camero",
+			"edad":27
+		},{
+			"nombre":"Bibiana Camero",
+			"edad":27
+		},{
+			"nombre":"Natalia Camero",
+			"edad":33
+		},{
+			"nombre":"Leonor Wulff",
+			"edad":60
+		},{
+			"nombre":"Esperanza Carreño",
+			"edad":55
+		}
+	];
+
+	function leerPersonas(json) {
+		
+		var titulo = "-------------Personas-------------<br><br><br>";
+		var out = "";
+		var i;
+		for (i = 0; i < json.length; i++){
+			
+			out += i  + ". Nombre: " + json[i].nombre + "<br> " + "Edad: " + json[i].edad + "<br><br>";
+		}
+		document.getElementById("mostrarPersonas").innerHTML = titulo + out;
+	}
+	
+	function mostrarPersonas() {
+		leerPersonas(personas);
+	}
+
+	function calcularEdadMayor (json) {
+		var titulo2 = "-----Personas Mayores de Edad------<br><br><br>";
+		var i;	
+		var out = "";
+
+		for (i = 0; i < json.length; i++) {
+			
+			if (json[i].edad >= 18) {
+		
+				 out += "Nombre: " + json[i].nombre + "<br>" + "Edad: " + json[i].edad + "<br><br>";
+			}
+		}
+		document.getElementById("edadMayor").innerHTML = titulo2 + out;
+					
+	}
+
+	function mostrarEdadMayor() {
+		calcularEdadMayor(personas);
+	}
+
+
+</script>
+</html>

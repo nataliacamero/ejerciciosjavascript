@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<h1>Comentarios de una linea</h1>
+
+    <p id="var1"></p>
+
+    <p id="var2"></p>
+
+    <p id="var3"></p>
+
+    <p id="var4"></p>
+
+    <p id="var5"></p>
+
+    <p id="resultado"></p>
+
+</body>
+
+<script>
+
+      //Creamos una variable "a" y le asignamos el valor 50.
+      var a = 50;
+      //EL valor asignado a la variable a se muestra en un elemento parrafo con id : var1.
+      //Imprimimos el valor de la variable "a" utilizando getElementById y la propiedad innerHTML.
+      document.getElementById("var1").innerHTML=a;
+
+      //Creamos una variable "b" y le asignamos el resultado de multiplicar 43*3.
+      var b = 43 * 3;
+      //EL valor asignado a la variable "b" se muestra en un elemento parrafo con id : var2.
+      //Imprimimos el valor de la variable "b" utilizando getElementById y la propiedad innerHTML.
+      document.getElementById("var2").innerHTML=b; 
+
+      //Creamos una variable "c" y le asignamos el resultado de dividir 32 entre 2 y multiplicar por 4.
+      var c = (32/2)*4;
+      //EL valor asignado a la variable "c" se muestra en un elemento parrafo con id : var3.
+      //Imprimimos el valor de la variable "c" utilizando getElementById y la propiedad innerHTML.
+      document.getElementById("var3").innerHTML=c;
+
+      
+      //Creamos una variable "d" y le asignamos el texto "Hola como esta?"
+      var d = "Hola como esta?"; 
+      //EL valor asignado a la variable "d" se muestra en un elemento parrafo con id : var4.
+      //Imprimimos el valor de la variable "d" utilizando getElementById y la propiedad innerHTML.
+      document.getElementById("var4").innerHTML=d;
+
+      //Creamos una variable "e" y le asignamos el texto "Next University"
+      var e = "Next University"; 
+      //EL valor asignado a la variable "e" se muestra en un elemento parrafo con id : var5.
+      //Imprimimos el valor de la variable "e" utilizando getElementById y la propiedad innerHTML.
+      document.getElementById("var5").innerHTML=e;
+
+      /*Creamos una funcion llamada "resta", en la que se retorna el resultado de la operacion 4-10
+      Luego declaramos la funcion asignando a la variable "resultado" la funcion resta();
+      Finalmente, imprimimos el valor de la variable "resultado" utilizando getElementById y la propiedad innerHTML.
+      */
+
+      function resta() {
+
+          return 4 - 10;
+
+      }
+
+ 
+      var resultado=resta(); 
+
+      document.getElementById("resultado").innerHTML=resultado;
+
+</script>
+
+</html>

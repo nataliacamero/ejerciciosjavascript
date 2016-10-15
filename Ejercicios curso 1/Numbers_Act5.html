@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="resultado"></p>
+</body>
+
+<script type="text/javascript">
+	
+Number.prototype.metodoDivision = function() {
+
+	return this / 2;
+}
+
+var numero1 = 1000;
+
+document.getElementById("resultado").innerHTML = numero1.metodoDivision();
+
+</script>
+
+</html>

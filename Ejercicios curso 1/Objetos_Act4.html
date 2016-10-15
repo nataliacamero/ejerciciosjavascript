@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+
+	<body>
+	<h1>Creacion de objetos</h1>
+
+		<h1>Vehiculo 1</h1>
+
+			<p id="p1"></p>
+			<p id="m1"></p>
+			<p id="mo1"></p>
+
+		<h1>Vehiculo 2</h1>
+
+			<p id="p2"></p>
+			<p id="m2"></p>
+			<p id="mo2"></p>
+
+		<h1>Vehiculo 3</h1>
+
+			<p id="p3"></p>
+			<p id="m3"></p>
+			<p id="mo3"></p>
+
+	</body>
+
+	<script type="text/javascript">
+		
+		//Creacion de un objeto mediante la palabra new.
+
+		var vehiculo1 = new Object ();
+		vehiculo1.placa = "AVG 233";
+		vehiculo1.marca = "Chevrolet";
+		vehiculo1.modelo = 001;
+
+
+		//Creacion de un objeto mediante una funcion o metodo constructor.
+
+		function vehiculo2 (placa, marca, modelo) {
+			this.placa = placa;
+			this.marca = marca;
+			this.modelo = modelo;
+		}
+
+			//Llamamos a la funcion y asignamos valores a las propiedades.
+
+			var vehiculo2 = new vehiculo2 ("AZZ 866", "Kia", 002);
+
+
+		//Creacion de un objeto mediante lista.
+
+		var vehiculo3 = {
+			placa:"HGT 879",
+			marca:"Aveo",
+			modelo:003
+		}
+
+
+		//Imprimimos las propiedades de los objetos en documento html.
+
+		document.getElementById("p1").innerHTML = vehiculo1.placa;
+		document.getElementById("m1").innerHTML = vehiculo1.marca;
+		document.getElementById("mo1").innerHTML = vehiculo1.modelo;
+
+		document.getElementById("p2").innerHTML = vehiculo2.placa;
+		document.getElementById("m2").innerHTML = vehiculo2.marca;
+		document.getElementById("mo2").innerHTML = vehiculo2.modelo;
+
+		document.getElementById("p3").innerHTML = vehiculo3.placa;
+		document.getElementById("m3").innerHTML = vehiculo3.marca;
+		document.getElementById("mo3").innerHTML = vehiculo3.modelo;
+
+
+	</script>
+</html>

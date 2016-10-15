@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POO</title>
+</head>
+<body>
+
+	<h1>Promedio de notas</h1>
+	<p id="mensaje"></p>
+	<button onclick="miFuncion()">Mostrar Promedio</button>
+
+</body>
+
+<script type="text/javascript">
+	
+	function Estudiante (codigo, nombre, nota1, nota2) { //Definimos la clase.
+		2		// Definimos las propiedades de la clase
+
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.nota1 = nota1;
+		this.nota2 = nota2;
+
+		// Definimos los metodos de la clase
+
+		this.promedio = function () {
+
+			var promedio = (this.nota1 + this.nota2) / 2;
+
+			document.getElementById("mensaje").innerHTML = "Estudiante: " + this.nombre + "<br>" + "Promedio de notas: " + promedio;
+		};
+	}
+
+	var estudiante = new Estudiante ("01", "Mateo Maggi", 70, 100);
+
+	function miFuncion(argument) {
+		estudiante.promedio();
+	};
+
+
+</script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POO</title>
+</head>
+<body>
+	<h1>Creacion de una clase</h1>
+	<p id="propiedades"></p>
+	<button onclick="miFuncion()">Mostrar Propiedades</button>
+</body>
+
+<script type="text/javascript">
+
+
+	function Producto (codigo, nombre, cantidad, precio){ //Creamos o definimos la clase.
+
+		//Definimos o creamos los atributos de la clase Producto
+		
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.cantidad = cantidad;
+		this.precio = precio;
+
+		//Definimos el metodo propio de la clase mostrar() de la clase producto.
+
+		this.mostrar = function() {
+
+			var propiedades = "";
+
+			propiedades += "Codigo: " + this.codigo + "<br>";
+			propiedades += "Nombre: " + this.nombre + "<br>";
+			propiedades += "Cantidad: " + this.cantidad + "<br>";
+			propiedades += "Precio: " + this.precio + "<br>";
+						
+			document.getElementById("propiedades").innerHTML = propiedades;
+		}
+
+	}
+
+	//Creamos un objeto de la clase Producto.
+
+	var producto = new Producto ("001", "Camisa", 13, 50000);
+
+	function miFuncion(argument) {
+		producto.mostrar(); //Invocacion del metodo mostrar(), a traves del objeto camisa.
+	}
+
+</script>
+
+</html>

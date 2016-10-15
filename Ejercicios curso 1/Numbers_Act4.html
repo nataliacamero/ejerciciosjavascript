@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Propiedades de los numeros</h1>
+
+	<p id="resultado"></p>
+
+</body>
+
+<script type="text/javascript">
+
+	Number.prototype.metodoMultiplicacion = function () {
+
+		return this * 12;
+	}
+
+	var numero1 = 10;
+
+	document.getElementById("resultado").innerHTML = numero1.metodoMultiplicacion();
+</script>
+
+</html>

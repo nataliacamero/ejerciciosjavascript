@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Errores</title>
+</head>
+<body>
+
+	<h1>Manejo de errores</h1>
+	<h1>Try-Catch</h1>
+
+	<button onclick="miFuncion()">Ejecutar Funcion</button>
+
+</body>
+
+<script type="text/javascript">
+
+/*
+	var numero = -40;
+	var raiz = Math.sqrt(numero);
+
+	document.getElementById("salida").innerHTML = raiz;
+*/	
+
+	function miFuncion() {
+
+		try {
+
+			var numero = -40;
+			var raiz = Math.sqrt(numero);
+
+			if (isNaN(raiz)) {
+				throw "No es posible calcular una raiz negativa!!";
+			}
+
+		} catch (error) {
+			alert("Existe un error: "+ "- " + error);
+		}
+
+
+
+	}
+
+</script>
+
+</html>

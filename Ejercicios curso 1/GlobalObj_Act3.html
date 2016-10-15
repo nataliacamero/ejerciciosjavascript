@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+	<h1>Funcion Global encodeURIComponent()</h1>	
+
+		<p id="e1"></p>
+		<p id="e2"></p>
+		<p id="e3"></p>
+		<p id="e4"></p>
+		<p id="e5"></p>
+		<p id="e6"></p>
+		<p id="e7"></p>
+		<p id="e8"></p>
+		<p id="e9"></p>
+		<p id="e10"></p>
+</body>
+
+<script type="text/javascript">
+	
+//Crear las variables y codificar las URL con la funcion encodeURIComponent().
+
+	var url1 = "http://nextuniversity.com/es/";
+	var url2 = "http://www.w3.org/";
+	var url3 = "https://www.facebook.com/";
+	var url4 = "https://twitter.com/";
+	var url5 = "http://instagram.com/";
+	var url6 = "https://www.youtube.com/";
+	var url7 = "http://www.oracle.com/es/index.html";
+	var url8 = "https://vine.co/";
+	var url9 = "https://es.pinterest.com/";
+	var url10 = "http://latam.motorola.com/";
+
+//Imprimir las URL's codificadas.
+
+	document.getElementById("e1").innerHTML = encodeURIComponent(url1);
+	document.getElementById("e2").innerHTML = encodeURIComponent(url2);
+	document.getElementById("e3").innerHTML = encodeURIComponent(url3);
+	document.getElementById("e4").innerHTML = encodeURIComponent(url4);
+	document.getElementById("e5").innerHTML = encodeURIComponent(url5);
+	document.getElementById("e6").innerHTML = encodeURIComponent(url6);
+	document.getElementById("e7").innerHTML = encodeURIComponent(url7);
+	document.getElementById("e8").innerHTML = encodeURIComponent(url8);
+	document.getElementById("e9").innerHTML = encodeURIComponent(url9);
+	document.getElementById("e10").innerHTML = encodeURIComponent(url10);
+
+</script>
+
+</html>

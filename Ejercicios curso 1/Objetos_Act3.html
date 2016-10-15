@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Creacion de objetos</h1>
+
+		<h1>Persona 1</h1>
+
+			<p id="i1"></p>
+			<p id="n1"></p>
+			<p id="e1"></p>
+
+		<h1>Persona 2</h1>
+
+			<p id="i2"></p>
+			<p id="n2"></p>
+			<p id="e2"></p>
+
+		<h1>Persona 3</h1>
+
+			<p id="i3"></p>
+			<p id="n3"></p>
+			<p id="e3"></p>
+</body>
+
+<script type="text/javascript">
+	
+	//Creacion de un objeto mediante una funcion o metodo constructor.
+
+	function persona1 (id, nombre, edad){
+		this.id = id;
+		this.nombre = nombre;
+		this.edad = edad;
+	}
+
+		//Llamar la funcion y asignar valores a sus parametros.
+
+		var persona1 = new persona1 ("001", "Mateo Ignacio Maggi Camero", 6);
+
+	
+	//Creacion de un objeto mediante la palabra reservada new.
+
+	var persona2 = new Object ();
+	persona2.id = "002";
+	persona2.nombre = "Natalia Camero Carreño";
+	persona2.edad = 34;
+
+	
+	//Creacion de un objeto mediante lista.
+
+	var persona3 = {
+		id:"003",
+		nombre:"Gustavo Ignacio Maggi Wulff",
+		edad:33
+	}
+
+
+	//Mostrar las propiedades de los objetos en docuemnto html.
+
+	document.getElementById("i1").innerHTML = persona1.id;
+	document.getElementById("n1").innerHTML = persona1.nombre;
+	document.getElementById("e1").innerHTML = persona1.edad;
+
+	document.getElementById("i2").innerHTML = persona2.id;
+	document.getElementById("n2").innerHTML = persona2.nombre;
+	document.getElementById("e2").innerHTML = persona2.edad;
+
+	document.getElementById("i3").innerHTML = persona3.id;
+	document.getElementById("n3").innerHTML = persona3.nombre;
+	document.getElementById("e3").innerHTML = persona3.edad;
+
+</script>
+
+</html>

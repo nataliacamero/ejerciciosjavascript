@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionales</title>
+</head>
+<body>
+	<h1>Switch</h1>
+		<p>El nombre es Gustavo Maggi</p>
+		<p id="guapo"></p>
+
+		<button onclick="verificarGuapura()">Nivel de Guapura</button>
+</body>
+
+<script type="text/javascript">
+	
+var nombre = "Gustavo Maggi";
+
+function verificarGuapura() {	
+
+	switch (nombre) {
+
+		case "Mauricio":
+		document.getElementById("guapo").innerHTML = "feo";
+		
+		break;
+
+		case "Daniel":
+		document.getElementById("guapo").innerHTML = "feo";
+
+		break;
+
+		case "Julio":
+		document.getElementById("guapo").innerHTML = "feo";
+
+		break;
+
+		case "Gustavo Maggi":
+		document.getElementById("guapo").innerHTML = "Este hombre es Guapisimo!!!";
+
+		break;
+
+	}
+
+}
+</script>
+</html>
