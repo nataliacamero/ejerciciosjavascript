@@ -6,9 +6,26 @@
 <body>
 	<h1>Metodo del DOM getElement.ByName</h1>
 
-	<a href="www.google.com"></a>
-	<a href="www.facebook.com"></a>
-	<a href="www.twitter.com"></a>
-	<a href="www.youtube.com"></a>
+		<table>
+			<tr>
+			<td><a href="www.google.com" >Google</a></td>
+			</tr>
+			<tr>
+			<td><a href="www.facebook.com" >Facebook</a></td>
+			</tr>
+			<tr>
+			<td><a href="www.twitter.com" >Twitter</a></td>
+			</tr>
+			<tr>
+			<td><a href="www.youtube.com" >Youtube</a></td>
+			</tr>
+		</table>
 </body>
+
+<script type="text/javascript">
+	var link = document.getElementsByTagName("a");
+	var cantidad = link.length;
+	alert("La cantidad de etiquetas <a> es: " + cantidad);
+</script>
+
 </html>
